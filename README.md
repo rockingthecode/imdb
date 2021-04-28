@@ -1,5 +1,8 @@
 # imdb
 Here is a sample project of GraphQL kickstart library. In this project, there are two resources which is served over GraphQL architecture.
+**Movie
+**Character
+
 Following libraries are used to implement project 
 
 - Spring Boot Web Starter 
