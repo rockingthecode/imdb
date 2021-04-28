@@ -1,0 +1,18 @@
+
+type MovieResponse {
+    id: Int!
+    title: String!
+    genre: Genre!
+    rating: Float
+    characters: [CharacterResponse]
+    releaseYear: Int
+}
+
+type CharacterResponse  {
+    id: Int!
+    movieId: Int!
+    characterName: String!
+}
+
+
+

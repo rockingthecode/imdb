@@ -1,0 +1,17 @@
+query getMoviesReleasedAfterThisYear($year: Int!){
+    getMoviesReleasedAfter(releasedAfter: $year) {
+        id
+        title
+        characters {
+            characterName
+        }
+    }
+
+}
+
+query getCharactersWithMovieId($movieId: Int!){
+    getCharacters(movieId: $movieId) {
+        movieId
+        characterName
+    }
+}

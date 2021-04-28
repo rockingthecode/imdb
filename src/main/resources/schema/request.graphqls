@@ -1,0 +1,19 @@
+input MovieRequest {
+    title: String!
+    genre: Genre!
+    rating: Float
+    characters:[String]
+    releaseYear: Int!
+}
+
+
+input CharacterRequest {
+    movieId: Int!
+    characterName: String!
+}
+
+input ActorRequest {
+    characterName: String!
+    firstName: String!
+    lastName: String!
+}

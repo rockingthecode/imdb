@@ -1,0 +1,24 @@
+schema {
+    query: Query
+    mutation: Mutation
+#    subscription: Subscription
+}
+
+#type Subscription {
+#    subscribeForNewMovie: [MovieResponse]
+#}
+
+type Query {
+    getMoviesReleasedAfter(releasedAfter: Int!) : [MovieResponse]
+    getCharacters(movieId: Int!) : [CharacterResponse]
+}
+
+type Mutation {
+    createMovie(movieInput: MovieRequest!): MovieResponse
+    createBulkMovie(movieInputList: [MovieRequest!]): [MovieResponse]
+}
+
+
+
+
+

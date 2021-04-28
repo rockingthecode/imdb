@@ -1,0 +1,6 @@
+enum Genre {
+    ACTION COMEDY DRAMA
+    DOCUMENTARY
+    FANTASY
+    SCIENCE_FICTION
+}

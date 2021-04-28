@@ -1,0 +1,52 @@
+mutation createSingleMovie{
+    createMovie(movieInput: {
+        title: "Harry Potter",
+        genre: FANTASY,
+        rating: 7.8
+        releaseYear: 2004
+        characters: ["Harry","Hermione","Snape"]
+    }){
+        id
+        title
+        genre
+        rating
+        characters {
+            characterName
+        }
+    }
+}
+
+mutation createBulkMovie{
+    createBulkMovie(movieInputList: [
+        {
+            title: "Harry Potter",
+            genre: FANTASY,
+            rating: 7.8
+            releaseYear: 2004
+            characters: ["Harry","Hermione","Snape"]
+        }
+        {
+            title: "Interstellar",
+            genre: SCIENCE_FICTION,
+            rating: 9.5
+            releaseYear: 2015
+            characters: ["TARS","Cooper","Professor Brand","Brandon"]
+        }
+        {
+            title: "Cosmos: A Space Time Odyssey",
+            genre: DOCUMENTARY,
+            rating: 9.2
+            releaseYear: 2012
+            characters: ["Neill De Grasse Tyson","Some Ancient Bacteria"]
+        }
+    ]){
+        id
+        title
+        genre
+        rating
+        characters{
+            characterName
+        }
+    }
+}
+
